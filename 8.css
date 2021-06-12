@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.wra{
+
+    background-image: url("bg3.png");
+    background-size: cover;
+    height: 703px;
+    width: 100%;
+    float: right;
+}
+.text h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.text h2{
+    text-align: center;
+}
+.im
+{
+    background-image: url("giter.png");
+    height: 366px;
+    width: 280px;
+    background-size: cover;
+    float: left;
+   
+    
+}
+.loc{
+    float: left;
+    position:relative;
+    top: 100px;
+    left: 40px;
+    font-weight: bold;
+}
+.loc span{
+    font-size: 26px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+.detail{
+    height: 106px;
+    width: 500px;
+    background-color: transparent;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+
+}
+.detail span{
+text-align: center;
+font-weight: bold;
+text-shadow: 0.05em 0.05em 0.05em rgb(161, 159, 159);
+}
+.detail h1{
+    font-size: 17px;
+    color: rgb(247, 165, 44);
+    display: inline;
+    text-shadow:0.05em 0.05em 0.05em rgb(128, 78, 3);
+    text-decoration:underline;
+    
+}

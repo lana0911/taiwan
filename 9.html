@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竹枝詞風土名情</title>
+    <link rel="stylesheet" href="9.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript" src="sample.js"></script>
+    
+
+    
+</head>
+<body>
+    <h1 class="ml16">&emsp;&emsp;竹枝詞風土名情</h1>
+    <script>
+        var textWrapper = document.querySelector('.ml16');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+            targets: '.ml16 .letter',
+            translateY: [-100,0],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 30 * i
+        }).add({
+            targets: '.ml16',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+        });
+    </script>
+   <div class="wrap">
+    <div class="text">   </div>
+    <div class="t">
+    <div class="im" id="one">
+        <h2>五福橋頭劇寂寥，<br>萬里橋邊又市囂。<br>爭若當門水如鏡，<br>儂家愛住太平橋。 </h2>
+        <h3>介紹： <br><br><br>
+            此詩句記錄了清水人的生活面貌與信仰概況，<br>以及節慶活動等文化，<br>當中出現五福橋、萬里橋和太平橋等地方。<br>
+            五福橋頭的戲劇落幕，萬里橋邊又熱鬧了起來，
+            橋水的更是清澈如鏡子一般，作者更是他自己愛住在太平橋。 <br></h3>
+            <h4> 顯示出當時的人們喜歡聚集再一起慶祝節慶等活動，<br>並且有看戲劇的習慣。</h4>
+    </div></div>
+    <div class="im" id="two">
+        <h2>鰲西社運未凌夷， <br>又煥文明到女兒。<br>學校養成新學問，<br>漫云巾幗遜鬚眉。 </h2>
+        <h3>介紹： <br><br><br>
+            本詩記錄著當地鰲西詩社曾經一度衰敗沒落，<br>
+            之後又以作為女子學校而再度興盛，<br>
+            女子只要在學校吸收了新學問之後，<br>
+            誰又能說女子的學習水準比不上男人呢。  <br></h3>
+            <h4> 可以看出當時詩社的興暢，連女子都可以向學，<br>
+                可見已逐漸邁向男女平等。 </h4>
+    </div>
+    <div class="im" id="three">
+        <h2>元宵女伴互歡呼，  <br>清茗一杯香一爐。<br>花粉檳榔盡羅列，<br>燈前準備問三姑。 </h2>
+        <h3>介紹： <br><br>
+            本詩描述元宵節女子結伴歡慶，人手中一杯茶，<br>
+            焚香一爐，檳榔花盛開，齊聚在元宵燈前「問三姑」。<br>
+            詩中透露早期台灣盛產檳榔之貌，<br>
+            以及在元宵節時與家人齊聚的習俗。
+            <br></h3>
+            <h4> 本詩有提到「觀三姑」等名俗信仰，<br>
+                希望藉由神靈來和逝去的親人溝通。 <br>
+                也可看出當時元宵節有喝茶，焚香等習慣。 </h4>
+    </div>
+    <div class="im" id="four">
+        <h2>遊春人唱冶春詞，  <br>奼紫嫣紅繫綺思。<br>商略蹈青何處好，<br>萋萋花草虎頭崎。  </h2>
+        <h3>介紹： <br><br><br>
+            開頭描述春天的美好及情思，而鰲峰山茂密的樹林、<br>
+            春光明媚，引出美好的遐思，<br>
+            所以為踏青的首選。  <br></h3>
+            <h4> 本詩描述清水人清明前後有踏青的習俗。<br>
+                也述說清水街紫雲巖附近山的壯景和草光春光明媚。 </h4>
+    </div>
+    <div class="im" id="five">
+        <h2>紅旗親寫儂名姓，  <br>三月初頭早剪裁。<br>待到天妃生月日，<br>伴人北港進香來。  </h2>
+        <h3>介紹： <br><br><br>
+            本詩為作者描寫鰲峰地區的風俗文化，<br>
+            北港朝天宮舉辦的遶境儀式將會經過鰲峰地區，<br>
+            鰲峰區的居民也會一起加入這項盛事。 <br></h3>
+            <h4> 鰲峰人會在年初時在紅旗上寫上家人的名字以求祝福，<br>
+                而農曆三月媽祖生日時，<br>
+                北港朝天宮舉辦的遶境儀式也會經過鰲峰地區，<br>
+                鰲峰區的居民都共襄盛舉。
+             </h4>
+    </div>
+    <div class="im" id="six">
+        <h2>三山王廟草堪芟，   <br>神像巍巍貌自儳。<br>牲醴年年誰賽願，<br>鼓聲只到紫雲岩。  </h2>
+        <h3>介紹： <br><br>
+            本詩紀錄原本清水人的信仰中心三山國王廟的沒落，<br>
+            被後起的紫雲巖觀音寺所取代。 <br>
+            巍巍，崇高雄偉的樣子。 <br></h3>
+            <h4>原本清水人信仰三山國王，是受到中國傳來的影響，<br>
+                但逐漸發展出自己的信仰，也就是紫雲巖觀音寺。 
+
+                  </h4>
+    </div>
+    <div class="im" id="seven">
+        <h2>中秋前後夜燈光， <br>過市招搖士女狂。<br>牽著香閨諸姐妹，<br>宵宵看殺踏謠娘。</h2>
+        <h3>介紹： <br><br>
+            本詩紀錄中秋節燈會盛事，<br>
+            男男女女在大庭廣眾下開懷作樂。<br> 
+            踏謠娘，又作「談容娘」，<br>
+            起源於隋末、盛行於唐代的民間歌舞戲，<br>
+            民間藝人在街頭廣場表演此歌舞戲，<br>
+            以前也用於驅邪、娛屍，
+            <br>可以看出清水人的民間信仰習俗。  <br></h3>
+            <h4>顯示清水小鎮為狂歡的不夜城，且有民間歌舞戲，<br>
+                可看出當時清水人生活多采多姿。 </h4>
+    </div>
+</div>
+</body>
+</html>

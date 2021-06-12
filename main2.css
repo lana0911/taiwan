@@ -1,0 +1,245 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+
+
+h1 {
+    color: #fff;
+    text-align: center;
+    position: relative; 
+    font-size: 50px;
+    top: 70px;
+}
+#toggler:checked + label .box {
+    background-color: cyan;
+}
+#toggler{
+    display: none;
+}
+.ham{
+    display:block;
+    width: 20px;
+    height: 20px;
+    position: relative; 
+    top: 1vh;
+    left: 50%;
+
+}
+.ham span{
+    display: block; 
+    height: 1px;;
+    background-color: #fff;
+    position: relative;
+    /* transition: all .3s ease-in-out ; */
+    transition: transform .3s ease-in-out, top 0.3s ease-in-out .3s;
+    top: 0;
+}
+.ham span:nth-child(2){
+    margin-top: 7px;
+}
+
+
+#toggler:checked + label .ham span:nth-child(1){
+    transform: rotate(45deg);
+    top: 4px;
+    transition: top .3s ease-in-out ,transform .3s ease-in-out .3s;
+}
+#toggler:checked + label .ham span:nth-child(2){
+    transform: rotate(-45deg);
+    top: -4px;
+    transition: top .3s ease-in-out ,transform .3s ease-in-out .3s;
+
+}
+
+header{
+    background-image: url(up.jpg);
+    background-size: cover;
+    height: 75vh;
+    padding: 0 18px ;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); 
+}
+
+.app-wrap {
+    /* display: flex; */
+    flex-direction: column;
+    height: 100vh;
+    width: 107.1%;
+    position:relative;
+    left: -18px;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  }
+
+.nav-items{
+    background-image: none;
+    background-size: cover;
+ 
+    width: 100%;
+    height: 85vh;
+    position:absolute;
+    top: 15vh;
+    left: 0;
+    transform: scaleY(0);
+    transition: transform .3s ease-in-out,  opacity .3s ease-in-out 0.3s;
+    transform-origin: 50% 0;
+    /* opacity: 0; */
+}
+
+#toggler:checked ~ .nav-items{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nine{
+    margin-left: 27px;
+}
+.nine div{
+    height: 120px;
+    width: 140px;
+    margin-left: 6px;
+    margin-top: 10px;
+    float: left;
+    border-radius: 20px;
+    position: relative;
+    top: 7vh;
+    left: 5px;
+}
+.nine div:hover {
+    height: 140px;
+    width: 160px;
+    background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+}
+.col1 div{
+    background-color:blue;
+}
+.col2 div{
+
+    background-color: brown;
+}
+.col3 div{
+
+    background-color: coral;
+}
+.div1{
+    background-image: url(1.jpg);
+    background-size: cover;
+
+}
+.div2{
+    background-image: url(4.jpg);
+    background-size: cover;
+
+}
+.div3{
+    background-image: url(7.jpg);
+    background-size: cover;
+
+}
+.div4{
+    height: 200px;
+    width: 140px;
+    background-image: url(2.jpg);
+    background-size: contain;
+}
+.div5{
+    background-image: url(5.jpg);
+    background-size: cover;
+
+}
+.div6{
+    background-image: url(8.jpg);
+    background-size: cover;
+
+}
+.div7{
+    background-image: url(3.jpg);
+    background-size: cover;
+
+}
+.div8{
+    background-image: url(6.jpg);
+    background-size: cover;
+
+}
+.div9{
+    background-image: url(9.jpg);
+    background-size: cover;
+
+}
+
+body{
+    background-image: url("up.jpg");
+    background-size: cover;
+
+}
+
+
+.nine span{
+    font-weight: bold;
+    color: #fff;
+    font-size: 19px;
+    position: relative;
+    left: 15px;
+    top: 68px;
+
+}
+
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #fcfcfc;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    /* background-color: #402d2d; */
+    transform-origin: 0.5 0;
+  }
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
